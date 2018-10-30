@@ -22,4 +22,7 @@ $ touch Vagrantfile
 
 Use the attached Vagrantfile here. The Vagrantfile contains the Ansible playbook which will install Devstack and also a Http-server within Devstack VM. 
 
+Running the Ansible playbook will do the needful using the following command:
+$ vagrant up
 
+The Playbook and Vagrantfile must be in the same folder location
