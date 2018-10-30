@@ -11,7 +11,7 @@ $ mkdir ansible_tutorial
 
 $ cd ansible_tutorial
 
-$ virtualenv venv -p python3.6
+$ virtualenv venv -p python3
 
 $ source venv/bin/activate
 
