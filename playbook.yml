@@ -1,6 +1,6 @@
 ---
 - name: install devstack
-#  hosts: all
+  hosts: all
   vars_files:
   - customize.yml
   remote_user: "{{ username }}"
