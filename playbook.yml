@@ -1,7 +1,7 @@
 ---
 - name: create a non-root user with sudo rights
   hosts: all
-  remote_user: root
+  remote_user: stack
   vars_files:
   - customize.yml
   tasks:
