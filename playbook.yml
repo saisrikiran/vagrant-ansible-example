@@ -8,9 +8,11 @@
 
   - name: update aptitude cache
     raw: apt-get update
+    sudo: yes
 
   - name: install python-apt for ansible
     raw: apt-get install python-apt
+    sudo: yes
 
   - name: ensure a sudo group exists
     group: name=sudo state=present
