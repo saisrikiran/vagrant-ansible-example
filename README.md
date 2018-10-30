@@ -23,6 +23,8 @@ $ touch Vagrantfile
 
 Use the attached Vagrantfile here. The Vagrantfile contains the Ansible playbook which will install Devstack and also a Http-server within Devstack VM. 
 
+Python installation within the VM is checked before the http-server Apache2 is installed.
+
 Running the Ansible playbook will do the needful using the following command:
 
 $ vagrant up
