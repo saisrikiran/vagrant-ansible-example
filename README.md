@@ -18,9 +18,13 @@ $ source venv/bin/activate
 $ pip install ansible flask
 
 Create a Vagrant file:
+
 $ touch Vagrantfile
 
 Use the attached Vagrantfile here. The Vagrantfile contains the Ansible playbook which will install Devstack and also a Http-server within Devstack VM. 
 
 Running the Ansible playbook will do the needful using the following command:
+
 $ vagrant up
+
+Customizations to the template and Ansible playbook can be done by editing the customize.yml.example file
