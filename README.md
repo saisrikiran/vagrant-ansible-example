@@ -24,5 +24,3 @@ Use the attached Vagrantfile here. The Vagrantfile contains the Ansible playbook
 
 Running the Ansible playbook will do the needful using the following command:
 $ vagrant up
-
-The Playbook and Vagrantfile must be in the same folder location
