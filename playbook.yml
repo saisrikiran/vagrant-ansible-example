@@ -1,6 +1,6 @@
 ---
 - name: install devstack
-  hosts: all
+  hosts: localhost
   vars_files:
   - customize.yml
   remote_user: "{{ username }}"
@@ -27,7 +27,7 @@
   
  # Creates a new instance with provisioning userdata using Bash Scripts
 - name: launch a compute instance
-  hosts: localhost
+  hosts: webservers
   tasks:
     - name: launch an instance
       os_server:
