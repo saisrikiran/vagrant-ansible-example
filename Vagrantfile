@@ -20,7 +20,7 @@ Vagrant.configure(2) do |config|
   web01.ssh.port = 2222    
   web01.vm.synced_folder ".", "/vagrant"
   web01.vm.provider "virtualbox" do |vb|
-    vb.memory = "4096"
+    vb.memory = "1024"
   end
   
   config.vm.provision "ansible" do |ansible|
