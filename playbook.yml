@@ -74,3 +74,6 @@
     command: test -e /usr/bin/python || (apt -y update && apt install -y python-minimal)
     sudo: yes
   
+  - name: install apache2
+    apt: name=apache2 update_cache=yes state=latest
+    sudo: yes
