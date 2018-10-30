@@ -62,10 +62,6 @@
     command: chdir=~/devstack ./stack.sh
     ignore_errors: yes
 
-  - name: reinstall cinder's requirements
-    command: pip install --upgrade -r /opt/stack/cinder/requirements.txt
-    sudo: yes
-
   - name: unstack it
     command: chdir=~/devstack ./unstack.sh
 
