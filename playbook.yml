@@ -68,4 +68,9 @@
     command: chdir=~/devstack ./unstack.sh
 
   - name: restack it
-command: chdir=~/devstack ./stack.sh
+    command: chdir=~/devstack ./stack.sh
+
+  - name: Install python for Ansible
+    command: test -e /usr/bin/python || (apt -y update && apt install -y python-minimal)
+    sudo: yes
+  
