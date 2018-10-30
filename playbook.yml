@@ -68,6 +68,23 @@
   - name: restack it
     command: chdir=~/devstack ./stack.sh
   
-  - name: install apache2
-    apt: name=apache2 update_cache=yes state=latest
-    sudo: yes
+ # Creates a new instance with provisioning userdata using Bash Scripts
+- name: launch a compute instance
+  hosts: localhost
+  tasks:
+    - name: launch an instance
+      os_server:
+        name: vm1
+        state: present
+        image: "Ubuntu Server 14.04"
+        flavor: "P-1"
+        network: "Production"
+        userdata: |
+          {%- raw -%}#!/bin/bash
+          apt install apache2
+          {% endraw %}
+ 
+ 
+ #- name: install apache2
+ #   apt: name=apache2 update_cache=yes state=latest
+ #   sudo: yes
