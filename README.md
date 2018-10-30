@@ -28,7 +28,7 @@ $ ansible-playbook -i "${SERVER_IP}," playbook.yml
 Customizations to the template and Ansible playbook can be done by editing the customize.yml.example file
 To run successfully, copy the customize.yml.example to customize.yml
 
-
+The Openstack services are enabled within the Jinja2 template that is stored in the file in the templates/ folder
 
 #Create a Vagrant file:
 #$ touch Vagrantfile
